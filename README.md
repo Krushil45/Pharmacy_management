@@ -118,7 +118,9 @@ Generate & print reports and invoices
 ---
 
 👨‍💻 Author
+
 Krushil Kapupara
+
 https://www.linkedin.com/in/krushil-kapupara || https://github.com/Krushil45
 
 ---
