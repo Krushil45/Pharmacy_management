@@ -65,25 +65,46 @@ pharmacy-management/ │ ├── bootstrap/ # Bootstrap assets ├── css/ 
   - Sales and purchase with print option
 
 ---
-  Import the Database
-  Open phpMyAdmin
 
-  Create a new database (e.g., pharmacy_db)
+## ⚙️ How to Run the Project
 
-  Import the provided .sql file (if included)
+  Set Up Local Server
+ - Use XAMPP or any local server that supports PHP & MySQL.
 
-  Configure Database Connection
+ - Move the project folder into htdocs/ directory
 
-  Edit your PHP DB connection file (e.g., db/config.php):
+ - Start Apache and MySQL from XAMPP control panel
 
-  $host = "localhost";
-  $username = "root";
-  $password = "";
-  $database = "pharmacy_db";
+ - Import the Database
+ - Open phpMyAdmin
 
-Run the App
-Open the project in your local server (e.g., XAMPP, MAMP):
-http://localhost/pharmacy-management/index.php
+ - Create a new database (e.g., pharmacy)
+
+ - Import the pharmacy.sql file
+
+ - Configure Database (If needed)
+ - In your connection script (inside php/ or sections/ or embedded inline):
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db   = "pharmacy";
+
+---
+
+🧪 Usage Flow
+Sign Up as admin with store details
+
+Login to dashboard
+
+Navigate to:
+
+Add & manage medicines/customers/suppliers
+
+Track stock levels
+
+Handle purchases and sales
+
+Generate & print reports and invoices
 
 ---
 
