@@ -89,6 +89,10 @@ pharmacy-management/ │ ├── bootstrap/ # Bootstrap assets ├── css/ 
     $pass = "";
     $db   = "pharmacy";
 
+ - Run the App
+   Open the project in your local server (e.g., XAMPP, MAMP):
+   http://localhost/pharmacy-management/index.php
+
 ---
 
 🧪 Usage Flow
