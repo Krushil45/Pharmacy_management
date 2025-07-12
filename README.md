@@ -1,140 +1,202 @@
 # 💊 Pharmacy Management System (Admin Side Only)
 
-A web-based **Pharmacy Management System** designed for **administrative use** only. It enables pharmacy administrators to manage medicines, stock, customers, suppliers, invoices, and reports efficiently. Built using **HTML**, **CSS**, **JavaScript**, **PHP**, **MySQL**, and **Bootstrap**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blue?style=for-the-badge&logo=html5" />
+  <img src="https://img.shields.io/badge/Backend-PHP-green?style=for-the-badge&logo=php" />
+  <img src="https://img.shields.io/badge/Database-MySQL-yellow?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/Status-Admin%20Only-orange?style=for-the-badge" />
+</p>
+
+> A web-based Pharmacy Management System designed for **admin-side operations only**. This project allows pharmacy administrators to manage medicines, stock, customers, suppliers, invoices, and reports effectively.
 
 ---
 
-## 🧰 Features
+## 🚀 Overview
 
-- 🧾 **Invoice Management**: Create and print invoices.
-- 👥 **Customer Management**: Add and manage customer data.
-- 💊 **Medicine Management**: Add, edit, delete medicines.
-- 📦 **Stock Tracking**: Manage medicine stock, including **expired** or **out-of-stock** alerts.
-- 🚚 **Supplier Management**: Add suppliers and manage medicine purchases.
-- 📈 **Reports**:
-  - Purchase Report
-  - Sales Report
-  - Invoice Report
-  - All reports are **printable**
-- 🔐 **Admin Authentication**:
-  - **Sign up** with store name, username, email, password, and address.
-  - **Login** using username and password.
+**Pharmacy Management System** is a PHP + MySQL-based CRUD application used by pharmacy admins to:
+
+- Manage medicine inventory
+- Handle customers and suppliers
+- Track purchases/sales
+- Generate invoices and reports
+- Authenticate admins securely
 
 ---
 
-## 🛠️ Technologies Used
+## 🧩 Key Features
 
-| Frontend         | Backend     | Database  |
-|------------------|-------------|-----------|
-| HTML, CSS        | PHP         | MySQL     |
-| JavaScript       |             |           |
-| Bootstrap        |             |           |
+- 🧾 **Invoice Management** – Create, view, and print invoices  
+- 👥 **Customer Management** – Add and manage customer records  
+- 💊 **Medicine CRUD** – Add, edit, delete, and track stock  
+- 🚚 **Suppliers** – Add suppliers and log purchases  
+- 📦 **Stock Alerts** – Expired and out-of-stock indicators  
+- 📈 **Reports** – Printable reports for purchases, sales, and invoices  
+- 🔐 **Admin Authentication** – Secure Sign Up and Login
 
 ---
+
+## 🛠️ Tech Stack
+
+| Layer      | Technologies Used                  |
+|------------|------------------------------------|
+| Frontend   | HTML, CSS, JavaScript, Bootstrap   |
+| Backend    | PHP (Core PHP, no frameworks)      |
+| Database   | MySQL                              |
+| Tools      | XAMPP, phpMyAdmin                  |
+
+---
+
 ## 📁 Project Structure Overview
 
-pharmacy-management/ │ ├── bootstrap/ # Bootstrap assets ├── css/ # Custom styles ├── images/ # Images used in the UI ├── js/ # JavaScript files ├── php/ # (Possibly reused PHP includes or handlers) ├── sections/ # Shared layout sections (header/footer) │ ├── add_customer.php ├── add_medicine.php ├── add_purchase.php ├── add_supplier.php ├── change_password.php ├── home.php # Admin Dashboard ├── index.html # Landing page or redirect to login ├── index.php # Entry page (maybe login) ├── login.php ├── logout.php ├── manage_customer.php ├── manage_invoice.php ├── manage_medicine.php ├── manage_medicine_stock.php ├── manage_purchase.php ├── manage_supplier.php ├── my_profile.php ├── new_invoice.php ├── purchase_report.php ├── sales_report.php ├── signup.php ├── pharmacy.sql # MySQL database dump ├── README.md
+```txt
+pharmacy-management/
+├── bootstrap/                # Bootstrap assets
+├── css/                      # Custom stylesheets
+├── images/                   # UI images
+├── js/                       # JavaScript files
+├── php/                      # Optional PHP handlers
+├── sections/                 # Reusable components (header/footer)
+├── add_customer.php
+├── add_medicine.php
+├── add_purchase.php
+├── add_supplier.php
+├── change_password.php
+├── home.php                  # Admin dashboard
+├── index.html
+├── index.php                 # Login entry point
+├── login.php
+├── logout.php
+├── manage_customer.php
+├── manage_invoice.php
+├── manage_medicine.php
+├── manage_medicine_stock.php
+├── manage_purchase.php
+├── manage_supplier.php
+├── my_profile.php
+├── new_invoice.php
+├── purchase_report.php
+├── sales_report.php
+├── signup.php
+├── pharmacy.sql              # MySQL DB dump
+└── README.md
+
+```
+---
+
+### 🔐 Admin Access Flow
+📝 Sign Up
+Store Name
+
+Username
+
+Email
+
+Password
+
+Address
+
+🔐 Login
+Username
+
+Password
 
 ---
 
-## 🔐 Admin Credentials Flow
+### 🧪 Usage Flow
+✅ Sign Up as a pharmacy admin
 
-### ✅ Sign Up
-- Store Name
-- Username
-- Email
-- Password
-- Address
+🔐 Login to your dashboard
 
-### 🔑 Login
-- Username
-- Password
+➕ Add medicines, customers, and suppliers
 
----
+🧾 Create invoices, manage purchases and sales
 
-## 🧪 Key Modules
+📈 Generate and print reports
 
-- **Medicine**:
-  - Add/Edit/Delete
-  - Stock status (expired, out-of-stock)
-- **Invoice**:
-  - Create and print
-- **Suppliers**:
-  - Add and manage
-- **Reports**:
-  - Sales and purchase with print option
+⚠️ Monitor stock levels, expired/out-of-stock alerts
 
 ---
 
-## ⚙️ How to Run the Project
+### ⚙️ How to Run the Project Locally
+✅ Requirements
+XAMPP / MAMP / WAMP (local PHP & MySQL server)
 
-  Set Up Local Server
- - Use XAMPP or any local server that supports PHP & MySQL.
-
- - Move the project folder into htdocs/ directory
-
- - Start Apache and MySQL from XAMPP control panel
-
- - Import the Database
- - Open phpMyAdmin
-
- - Create a new database (e.g., pharmacy)
-
- - Import the pharmacy.sql file
-
- - Configure Database (If needed)
- - In your connection script (inside php/ or sections/ or embedded inline):
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db   = "pharmacy";
-
- - Run the App
-   Open the project in your local server (e.g., XAMPP, MAMP):
-   http://localhost/pharmacy-management/index.php
+Browser & Internet connection
 
 ---
 
-🧪 Usage Flow
-Sign Up as admin with store details
+### 🔧 Steps
 
-Login to dashboard
+Move Project to Server Directory
 
-Navigate to:
+# Move the entire folder to:
 
-Add & manage medicines/customers/suppliers
+C:/xampp/htdocs/pharmacy-management/
 
-Track stock levels
+Start Apache and MySQL in XAMPP
 
-Handle purchases and sales
+Import the Database
 
-Generate & print reports and invoices
+Open phpMyAdmin
+
+Create a database (e.g., pharmacy)
+
+Import pharmacy.sql file
 
 ---
+
+### Configure DB Connection (if needed)
+
+$host = "localhost";
+
+$user = "root";
+
+$pass = "";
+
+$db   = "pharmacy";
+
+Run the Application
+
+--- 
+# Open in browser:
+
+http://localhost/pharmacy-management/index.php
 
 📷 Screenshots
-![ss3 0](https://github.com/user-attachments/assets/548d915b-cdff-4916-b2e0-3cb2a2768fa7)
+
+🏠 Dashboard
 
 ---
 
-👨‍💻 Author
+## 📄 License
 
-Krushil Kapupara
+This project is licensed under the **MIT License © 2025**
 
-https://www.linkedin.com/in/krushil-kapupara || https://github.com/Krushil45
-
----
-
-📄 License
-Open-source project under the MIT License.
+> "Connecting Minds, Building Futures."
 
 ---
 
-Let me know if you'd like to:
+## 👤 Author
 
-- Add environment variables like for DB credentials
-- Include `.env`-style support using PHP constants
-- Generate sample data for `pharmacy.sql`
-- Create a video demo link or animated walkthrough
+**Kapupara Krushil**  
+📧 Email: [krusilkapupara456@gmail.com](mailto:krusilkapupara456@gmail.com)  
+🔗 GitHub: [@Krushil45](https://github.com/Krushil45)  
+🔗 LinkedIn: [krushil-kapupara](https://www.linkedin.com/in/krushil-kapupara)
 
-I’d be happy to help you polish it even more!
+---
+
+## 🤝 Contributions
+
+We welcome contributions of all types:
+💡 Ideas | 🐛 Bug Fixes | 📖 Docs | 💻 Code
+
+### To contribute:
+
+1. **Fork** this repository  
+2. **Create** a feature branch  
+3. **Make changes** and commit  
+4. **Submit** a Pull Request (PR)  
+
+Let’s build something impactful together! 🚀
+
+
