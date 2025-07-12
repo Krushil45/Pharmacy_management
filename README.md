@@ -163,7 +163,7 @@ Run the Application
 http://localhost/pharmacy-management/index.php
 
 📷 Screenshots
-
+![ss3 0](https://github.com/user-attachments/assets/548d915b-cdff-4916-b2e0-3cb2a2768fa7)
 🏠 Dashboard
 
 ---
